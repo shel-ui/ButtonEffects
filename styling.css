@@ -1,0 +1,84 @@
+html {
+    overflow: visible;
+}
+
+body {
+    background-color: #103020;
+    color: orange;
+}
+
+.btns-transforms {
+    user-select: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.btns-transitions {
+    user-select: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+button {
+    user-select: none;
+    padding: 20px;
+    width: 30%;
+    border-radius: 5px;
+    margin: 35px;
+    background-color: lightgrey;
+    color: black;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.btn1:active {
+    background-color: grey;
+}
+
+/*transform only*/
+
+.btn2:active {
+    transform: translateY(-20px);
+}
+
+.btn3:active {
+    transform: translateY(20px);
+}
+
+.btn4:active {
+    transform: translateX(-20px);
+}
+
+.btn5:active {
+    transform: translateX(20px);
+}
+
+/* with transition */
+
+.btn6:active {
+    transform: scale(0.7);
+    transition: transform 500ms;
+}
+
+.btn7:active {
+    transform: translateX(-150px);
+    transition: transform 500ms;
+}
+
+.btn8:active {
+    transform: translateX(-150px);
+    transition: transform 500ms;
+}
+
+.btn9:active {
+    transform: translateY(-50px);
+    transition: transform 500ms;
+}
+
+.btn10:active {
+    transform: translateY(50px);
+    transition: transform 500ms;
+}
